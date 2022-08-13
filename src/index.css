@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "material-icons/iconfont/material-icons.css";
+
+@layer components {
+  .hero-image {
+    background-image: url("./assets/images/photo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  .hero-clip {
+    clip-path: polygon(23% 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-blend-mode: multiply;
+  }
+
+  .no-hero {
+    background-image: none;
+    background-color: white;
+  }
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-ExtraBold.ttf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-SemiBold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Light.ttf");
+  font-weight: 300;
+}
+
+* {
+  font-family: "Poppins";
+}
